@@ -1,0 +1,6 @@
+Package: scosvnc
+Version: 1.0
+Architecture: all
+Maintainer: SCOS100
+Description: TigerVNC Scripts by SCOS
+Depends: bash
