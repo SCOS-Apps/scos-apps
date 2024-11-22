@@ -3,7 +3,7 @@ Version: 1.0
 Architecture: all
 Maintainer: SCOS100
 Depends: bash
-Filename: https://raw.githubusercontent.com/SCOS-Apps/scos-apps/refs/heads/master/base/scosvnc_1.0_all.deb
+Filename: base/scosvnc_1.0_all.deb
 Size: 522
 MD5sum: 38d83f9fa2e94ff641aca7a059c7a06c
 SHA1: b0ae48bda55c0d84abf658373f37ec439469da63
