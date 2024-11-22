@@ -1,0 +1,6 @@
+Archive: stable
+Origin: SCOS-Apps
+Label: SCOS-Apps
+Version: 1.0
+Component: main
+Architecture: all
