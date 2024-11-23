@@ -1,5 +1,5 @@
 #!/usr/bash
-let MainDir=$(pwd)
+MainDir="$(pwd)"
 apt-ftparchive packages $MainDir/pool > $MainDir/dists/stable/main/binary-all/Packages
 cd $MainDir/dists/stable/main/binary-all/
 bzip2 -c9 Packages > Packages.bz2
@@ -22,7 +22,7 @@ zstd -c19 Contents-all > Contents-all.zst
 
 cd ..
 
-grep -E "Origin:|Label:|Suite:|Version:|Codename:|Architectures:|Components:|Description:" dists/stable/Release > Base
+grep -E "Origin:|Label:|Suite:|Version:|Codename:|Architectures:|Components:|Description:" $MainDir/dists/stable/Release > Base
 apt-ftparchive release . > Release
 cat Base Release > out && mv out Release
 cp Release InRelease

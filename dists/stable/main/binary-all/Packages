@@ -1,12 +1,13 @@
 Package: scosvnc
-Version: 1.0
 Architecture: all
+Version: 1.0
 Maintainer: SCOS100
 Depends: bash
-Filename: pool/main/scosvnc_1.0_all.deb
+Filename: /root/scos-apps/pool/main/scosvnc_1.0_all.deb
 Size: 522
 MD5sum: 38d83f9fa2e94ff641aca7a059c7a06c
 SHA1: b0ae48bda55c0d84abf658373f37ec439469da63
 SHA256: aa8911bc7a76e177e2e3c0634717a8a83cddf8ed39bdf082b9e5747e973d7fa8
+SHA512: b92aeb7741e6c09dad87f574dae8536b057a6b4cca8eedaf3c2fb0a2a864d7d5c6f9e65374aa6731df9b755c75223a72d3ba45c30faff0a534fc90e306e486f4
 Description: TigerVNC Scripts by SCOS
 
