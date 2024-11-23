@@ -3,7 +3,7 @@ Label: SCOS-Apps
 Suite: stable
 Version: 1.0
 Codename: SApps
-Architectures: all amd64 arm64 armel armhf i386 mips64el mipsel ppc64el s390x
+Architectures: all aarch64 arm amd64 arm64 armel armhf i386 mips64el mipsel ppc64el s390x
 Components: main
 Description: Multi-System Compatible Packages
 Date: Sat, 23 Nov 2024 16:45:43 +0000
