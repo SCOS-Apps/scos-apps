@@ -1,0 +1,9 @@
+Origin: SCOS-Apps
+Label: SCOS-Apps
+Suite: stable
+Version: 1.0
+Codename: SApps
+Architectures: all amd64 arm64 armel armhf i386 mips64el mipsel ppc64el s390x
+Components: main
+Date: Fri, 22 Nov 2024, 09:00:00 GMT
+Description: Multi-System Compatible Packages
