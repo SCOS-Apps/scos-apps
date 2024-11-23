@@ -1,4 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
 Origin: SCOS-Apps
 Label: SCOS-Apps
 Suite: stable
@@ -8,10 +7,3 @@ Architectures: all amd64 arm64 armel armhf i386 mips64el mipsel ppc64el s390x
 Components: main
 Date: Fri, 22 Nov 2024, 09:00:00 GMT
 Description: Multi-System Compatible Packages
------BEGIN PGP SIGNATURE-----
-
-iHUEABYKAB0WIQT/PxR6F8NnEJnHn5Xcjl1Al6gkcwUCZ0G+awAKCRDcjl1Al6gk
-c1e3AQDXpsBXdDwnDWslVi1zpjApwt/8UtBXoxJcFD/2RS6zxQD/QTSzEMgcZRno
-oSfkUAO/QU5/8mGBgvbsBLv/1lchCgk=
-=NQt9
------END PGP SIGNATURE-----
