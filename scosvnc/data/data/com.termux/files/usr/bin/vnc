@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+export DISPLAY=":0"
+if vncserver -list > /dev/null && printf "\r"; then
+	printf "\r"
+else
+	echo "[E] Failed to run vncserver. Trying to install..."
+        apt install -y tigervnc-standalone-server > /dev/null
+fi
+case "$1" in
+	--kill)
+		echo "[I] Killing server..."
+		vncserver -kill :0 2>/etc/null || echo "[E] Could not kill server, was it running in the first place?"; exit 1
+	;;
+	--xstartup)
+		if [ -z "$2" ]; then
+			echo "[E] Please specify program to run!"
+			exit 1
+		else
+			echo "[I] Starting..."
+			vncserver :0 -xstartup $2 -localhost no -geometry 1980x1080 -geometry 1280x720 > /etc/null || echo "[E] Failed to run vncserver, is it a different server?"; exit 1
+		fi
+	;;
+	--help)
+		echo "SCOS TigerVNC Startup Script"
+		echo "Usage: vnc OPTION"
+		echo ""
+		echo "Options:"
+		echo "	--help: Shows this text."
+		echo "	--xstartup <Executable>: Starts up specific file."
+		echo "	--kill: Kills server. (Warning, this only works on servers launched by this script, or that has been launched in :0)"
+	;;
+	*)
+		if [ -z "$1" ]; then
+			echo "[E] Unspecified Option! (Type --help for options)"
+		else
+			echo "[E] Unrecognized option: $1"
+		fi
+		exit 1
+	;;
+esac

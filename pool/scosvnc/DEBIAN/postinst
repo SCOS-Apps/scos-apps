@@ -1,1 +1,11 @@
+#!/bin/env bash
 echo "[i] Installing package..."
+if [ "$(uname -m)" = "aarch64" ] && [ "$(uname -o)" = "Android" ]; then
+	echo "[i] Running in Termux, downloading..."
+elif [ "$(uname -o)" = "Toybox" ]; then
+	echo "[E] hell naw, yo ass tryna run this in base Android???"
+	echo "[E] Only run this in base Android if you are using DPKDroid."
+	exit 1
+else
+	echo "[i] Running in normal Linux, downloading..."
+fi
